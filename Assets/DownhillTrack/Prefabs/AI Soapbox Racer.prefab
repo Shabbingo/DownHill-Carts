@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6245460603925403226
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2876112286962180588, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_Name
+      value: AI Soapbox Racer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3514993181053645159, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: playerControlled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6080336594324833595, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 9032177666888575319, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+    - {fileID: 2771272298364682173, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2876112286962180588, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 135193895283579710}
+  m_SourcePrefab: {fileID: 100100000, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+--- !u!1 &8162305617733613494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2876112286962180588, guid: fca86313bd6d78349ab1f540de9f68e8, type: 3}
+  m_PrefabInstance: {fileID: 6245460603925403226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &135193895283579710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8162305617733613494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af90b5d5e7e71a428585fd2f5da2661, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DownhillCarts.AIRacerDriver
+  racingLine: {fileID: 0}
+  skill: 0.9
+  racerColor: {r: 0.1, g: 0.55, b: 1, a: 1}
+  preferredLaneOffset: 0
+  laneWander: 0.22
+  straightSpeedKph: 96
+  hairpinSpeedKph: 35
+  steeringLookAhead: 5
+  barrierProbeDistance: 4.5
+  barrierAvoidanceStrength: 0.52
+  barrierSteeringSmoothTime: 0.24
+  trafficProbeDistance: 11
+  trafficAvoidanceStrength: 0.58
+  trafficBrakeDistance: 4.5
+  trafficSteeringSmoothTime: 0.3
+  recoveryDelay: 6
